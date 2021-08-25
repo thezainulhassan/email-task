@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "943fc80b-f356-4515-abd2-0151151c7b04",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "subcribe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/subscribe?name=asad&email=asas@gmail.com&is_subscribe=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"subscribe"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "asad",
+							"description": "user name"
+						},
+						{
+							"key": "email",
+							"value": "asas@gmail.com",
+							"description": "user email"
+						},
+						{
+							"key": "is_subscribe",
+							"value": "1",
+							"description": " value must be 1 for subscription"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newpost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "post name",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"description": "post description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/newpost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"newpost"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
