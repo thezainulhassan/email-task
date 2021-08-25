@@ -1,5 +1,5 @@
 Run following commands
 
- composer install
- cp .env.example .env
- php artisan key:generate
+ 1- composer install
+ 2- cp .env.example .env
+ 3- php artisan key:generate
